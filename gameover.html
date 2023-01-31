@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameover</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            background-color:rgb(242, 204, 244);
+        }
+        .over{
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 178px;
+            font-size: 40px;
+        }
+        p{
+            padding: 0px;
+            margin-top: -2px;
+            font-size: 51px;
+        }
+        a{
+            width:50px;
+            text-decoration: none;
+            color: black;
+            justify-content: center;
+            text-align: center;
+        }
+        .btn{
+            border: none;
+            width: 178px;
+            height: 55px;
+            font-size: 32px;
+            background:  rgb(218, 150, 24);
+            background: linear-gradient(rgb(242, 163, 15) ,rgb(232, 232, 43) );
+        }
+        .btn:hover{
+            cursor:pointer;
+            box-shadow: 0 0.4rem 1.4rem 0 rgb(231, 178, 81);
+            transition: transform 150ms;
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <div class="over">
+        <h1>Oops!!!</h1>
+        <h3>WRONG ANSWER</h3>
+        <p>Game Over</p>
+        <button class="btn"><a href="end.html" >QUIT</a></button>
+        
+    </div>
+</body>
+</html>

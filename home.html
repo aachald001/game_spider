@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script>
+    let x=0;
+    localStorage.setItem('mostRecentScore',x)
+
+    let questions = [
+    {
+       question: 'What does the abbreviation HTML stand for?',
+       choice1: 'HyperText Markup Language.',
+       choice2: 'HighText Markup Language.',
+       choice3: 'HyperText Markdown Language.',
+       choice4: 'None of the above.',
+       answer: 1,
+    },
+    {
+        question: ' How many sizes of headers are available in HTML by default?',
+        choice1: '5',
+        choice2: '1',
+        choice3: '3',
+        choice4: '6',
+        answer: 4,
+     },
+     {
+        question: 'What is the disadvantage of array data structure?',
+        choice1: 'The amount of memory to be allocated should be known beforehand.',
+        choice2: 'Elements of an array can be accessed in constant time.',
+        choice3: 'Elements are stored in contiguous memory blocks.',
+        choice4: 'Multiple other data structures can be implemented using arrays.',
+        answer: 1,
+     },
+     {
+        question: 'Which of the following data structures finds its use in recursion?',
+        choice1: 'stack',
+        choice2: 'Arrays',
+        choice3: 'Linked List',
+        choice4: 'Queues',
+        answer: 1,
+     },
+     {
+        question: 'Which of the following sorting algorithms provide the best time complexity in the worst-case scenario?',
+        choice1: 'Quick Sort',
+        choice2: 'Bubble Sort',
+        choice3: 'Merge Sort',
+        choice4: 'Selection Sort',
+        answer: 3, 
+     },
+]
+localStorage.setItem('QuestionSet',JSON.stringify(questions));
+localStorage.setItem('counter',0
+);
+
+</script>
+
+</head>
+<body>
+   <div class="container">
+    <div id="home" class="flexcolumn flexcenter">
+        <h1>WELCOME</h1>
+        <a href="index.html" class="btn">PLAY</a>
+        <a href="leaderboard.html" id="leaderbtn" class="btn">LEADER-BOARD</a>
+    </div>
+   </div> 
+</body>
+</html>

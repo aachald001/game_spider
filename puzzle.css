@@ -1,0 +1,52 @@
+body{
+    color: rgb(48, 45, 45);
+}
+.choice-container{
+    display: flex;/*responsive bnane ke liye*/
+    margin-bottom:14px;
+    margin-left: 34px;
+    /* margin-right: 10px; */
+    width: 97%;
+    border-radius: 4px;
+    background-color: rgb(218, 150, 24);
+    font-size: 35px;
+    min-width: 1280px;/*box choices ke box ki width ke liye*/ 
+}
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow:  0 0.4rem 1.4rem 0 rgb(231, 178, 81);
+    transform: scale(1.02);/*point krne per thoda uper uth jayega*/
+    transform: transform 100ms;
+}
+.choice-prefix{
+    padding: 16px 38px;
+    color: rgb(225, 209, 209);
+}
+.choice-text{
+    padding: 16px;
+    width: 100%;
+}
+.correct{
+    background: linear-gradient(32deg, rgb(13, 206, 13) 0%,rgb(57, 234, 57) 100%);
+}
+.incorrect{
+    background: linear-gradient(32deg, rgb(222, 42, 42) 0%,rgb(216, 66, 66) 100%);
+}
+ @media screen and (max-width: 1200px){ 
+    .choice-container{
+        min-width: 200px;
+    }  
+}
+/*for responsive when max width 1200px then this query will be run*/
+#hud{
+    display:flex;
+    justify-content: space-between;
+}
+.hud-prefix{
+    text-align: center;
+    font-size:55px;
+}
+.hud-main-text{
+   text-align:center; 
+}
+

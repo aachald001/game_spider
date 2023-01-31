@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-family: 'Merriweather', serif;
+    font-size: 120%;
+}
+body{
+    background-color: rgb(231, 217, 217);
+    font-family: 'Merriweather', serif;
+}
+.gamecontainer{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width:100%;
+    height: 100vh;
+}
+.user{
+    background-image: url(character.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:233px;
+    height: 233px;
+    position: absolute;
+    bottom: 0;
+}
+#dice{
+    background-image: url(dice1.jpg);
+    /* display: flex; */
+    background-size: cover;
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    /* justify-content: center; */
+    /* align-items: center; */
+     bottom: 365px; 
+    left: 44vw; 
+    cursor: pointer;
+    border-radius: 16px;
+}
+#value{
+    background-size: cover;
+    position: absolute;
+    bottom: 502px;
+    left: 46vw;
+    font-size: 96px;
+}
+.puzzle{
+    background-image: url(treasure.jpg);
+    background-size: cover;
+    width: 414px;
+    height:171px;
+    position: absolute;
+    bottom:21px;
+    /* left: 55vw; */
+    right: 5%;
+    
+}
+h1{
+    margin-bottom: 50px;
+    margin-top: 0px; 
+    text-align: center;
+}
+h2{
+    font-size: 64px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    align-items: center;    
+     /* max-width: 80rem;   */
+     /* flex-wrap: wrap; */
+    margin: 0 auto;
+    padding: 0px;
+}
+.btn{
+    padding: 21px;
+    width:438px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(41, 36, 36);
+    background:  rgb(218, 150, 24);
+    /* margin-right: 15px; */
+    /* margin-left: 204px; */
+    border-radius: 6px;
+    margin: 25px;
+    background: linear-gradient(rgb(242, 163, 15) ,rgb(232, 232, 43) );/*overlay of color*/
+}
+/* #leaderbtn{
+    margin-left: 45px; 
+} */
+.flexcolumn {
+    display:flex;
+    flex-direction: column;
+ }
+ .flexcenter{
+    justify-content: center;
+    align-items: center;
+ }
+ .justify-center{
+    justify-content: center;
+ }
+ .text-center{
+    text-align: center;
+ }
+ .hidden{
+    display: none;
+ }
+.btn:hover{
+    cursor:pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(231, 178, 81);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+.btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.fa-crown{
+    font-size: 32px;
+    margin-left:16px;
+}
+
+.end-form-container{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+input{
+    margin-bottom: 1rem;
+    width:20rem;
+    padding:1.5rem;
+    font-size:1.8rem;
+    border: none;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(231, 178, 81);  
+}
+input::placeholder{
+    color:rgb(18, 19, 19); 
+}
+#username{
+    margin-bottom: 1rem;
+    width:100%;
+    outline: none;
+}
+#end-text{
+    font-size: 2.4rem;
+    /* color:aliceblue; */
+    text-align: center;
+}
+#saveScoreBtn{
+    border:none;
+}
+.fa-home{
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: black;
+}
+@media screen and (max-width: 800px){ 
+    .puzzle{
+        width: 276px;
+        height:114px;
+    }  
+}
+@media screen and (max-width: 500px){ 
+    .puzzle{
+        width: 207px;
+        height:85px;
+    }  
+}
+/* #end{ 
+    margin:-10px;
+    padding:28px;
+} */
+.hud-item{
+    margin :0px;
+    padding: 21px;
+}
+
